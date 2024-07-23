@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add a Pet</title>
+</head>
+<body>
+	<h1>Please add in a pet here</h1>
+	<form action="/petClinic/addPet" method="post">
+	<h3>Please enter the pet's name</h3>
+	<input type="text" name="petName" placeholder="Shadow" required><br><br>
+	<h3>Please enter the owner's name</h3>
+	<input type="text" name="ownerName"	placeholder="James Herriot" required><br><br>
+	<h3>Please enter the phone number</h3>
+	<input type="text" name="phone" placeholder="760-740-9874" required><br><br>
+	<h3>Please enter the email address</h3>
+	<input type="text" name="email" placeholder="james@example.com" required><br><br>
+	<h3>Please enter the address</h3>
+	<input type="text" name="address" placeholder="123 Shady Glen, Hacienda Heights, Ca 91745" required><br><br>
+	<h3>Please enter the type of pet</h3>
+	<input type="text" name="petType" placeholder="German Shepard dog" required><br><br>
+	<h3>Please enter the date of the last appointment</h3>
+	<input type="date" name="lastAppointment" placeholder="9/10/2022" required><br><br>
+	<input type="submit" value="Add Pet">		
+	</form>
+	<p><a href="login.html">Returning user? Log in here</a></p>
+</body>
+</html>
