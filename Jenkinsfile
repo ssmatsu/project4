@@ -9,7 +9,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Building project with maven"
-                echo %PATH%
                 bat 'mvn -B -DskipTests clean package'
             }
         }
