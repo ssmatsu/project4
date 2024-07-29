@@ -1,7 +1,5 @@
 pipeline {
-    agent{
-    	docker {image 'node:20.16.0-alpine3.20'}
-    	}
+    agent any
     tools{
         maven 'Maven'
         jdk 'Java'
@@ -14,5 +12,11 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
+         stage('Test') {
+            steps {
+                echo "Testing project with maven"
+                sh 'mvn test'
+            }
+         }
     }
 }
